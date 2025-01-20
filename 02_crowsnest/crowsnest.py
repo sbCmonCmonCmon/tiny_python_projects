@@ -30,8 +30,10 @@ def main():
 
     args = get_args()
     word = args.word
-    print(word)
-
+    char = word[0].lower()
+    article = 'an' if char in 'aeiou' else 'a'
+    print(f'Ahoy, Captain, {article} {word} off the larboard bow!')
+    
 
 # --------------------------------------------------
 if __name__ == '__main__':
